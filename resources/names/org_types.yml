@@ -446,10 +446,6 @@ types:
       - Aktienges
       - AktG
       - Akt Ges
-      - AG & Co. KG
-      - AG & Co KG
-      - AG und Co KG
-      - AG & Co. KGaA
       - A.G.
       - A G
       - AGs
@@ -474,6 +470,115 @@ types:
     generic: LP
     aliases:
       - Kommanditgesellschaft auf Aktien
+
+  # OHG - Offene Handelsgesellschaft (General Partnership)
+  - display: OHG
+    generic: GP
+    aliases:
+      - Offene Handelsgesellschaft
+      - oHG
+      - O.H.G.
+      - Offene Handels-Gesellschaft
+
+  # gUG - gemeinnützige Unternehmergesellschaft (Non-profit UG)
+  - display: gUG
+    generic: LLC
+    aliases:
+      - gUG (haftungsbeschränkt)
+      - gemeinnützige UG
+      - gemeinnützige UG (haftungsbeschränkt)
+      - gemeinnützige Unternehmergesellschaft
+      - gemeinnützige Unternehmergesellschaft (haftungsbeschränkt)
+
+  # UG & Co. KG - 17,811 companies in German registry
+  - display: UG & Co. KG
+    compare: UGCoKG
+    generic: LP
+    aliases:
+      - UG (haftungsbeschränkt) & Co. KG
+      - UG & Co KG
+      - UG (haftungsbeschränkt) & Co KG
+      - Unternehmergesellschaft & Co. KG
+      - Unternehmergesellschaft (haftungsbeschränkt) & Co. KG
+
+  # AG & Co. KG - 690 companies (moved from AG aliases)
+  - display: AG & Co. KG
+    compare: AGCoKG
+    generic: LP
+    aliases:
+      - AG & Co KG
+      - AG und Co KG
+      - AG und Co. KG
+      - Aktiengesellschaft & Co. KG
+
+  # SE & Co. KG
+  - display: SE & Co. KG
+    compare: SECoKG
+    generic: LP
+    aliases:
+      - SE & Co KG
+      - Europäische Gesellschaft & Co. KG
+
+  # Stiftung & Co. KG - 162 companies including ALDI
+  - display: Stiftung & Co. KG
+    compare: StiftungCoKG
+    generic: LP
+    aliases:
+      - Stiftung & Co KG
+      - Stiftung und Co. KG
+
+  # GmbH & Co. OHG - 450 companies
+  - display: GmbH & Co. OHG
+    compare: GmbHCoOHG
+    generic: GP
+    aliases:
+      - GmbH & Co OHG
+      - GmbH & Co. oHG
+      - GmbH & Co oHG
+      - Gesellschaft mit beschränkter Haftung & Co. OHG
+
+  # UG & Co. OHG
+  - display: UG & Co. OHG
+    compare: UGCoOHG
+    generic: GP
+    aliases:
+      - UG (haftungsbeschränkt) & Co. OHG
+      - UG & Co OHG
+
+  # eG & Co. KG - 50 companies
+  - display: eG & Co. KG
+    compare: eGCoKG
+    generic: LP
+    aliases:
+      - eG & Co KG
+      - eingetragene Genossenschaft & Co. KG
+      - Genossenschaft & Co. KG
+
+  # SE & Co. KGaA - 31 companies including Bertelsmann, Fresenius
+  - display: SE & Co. KGaA
+    compare: SECoKGaA
+    generic: LP
+    aliases:
+      - SE & Co KGaA
+      - Europäische Gesellschaft & Co. KGaA
+
+  # GmbH & Co. KGaA
+  - display: GmbH & Co. KGaA
+    compare: GmbHCoKGaA
+    generic: LP
+    aliases:
+      - GmbH & Co KGaA
+      - Gesellschaft mit beschränkter Haftung & Co. KGaA
+
+  # Ltd. & Co. KG - 907 companies
+  - display: Ltd. & Co. KG
+    compare: LtdCoKG
+    generic: LP
+    aliases:
+      - Ltd & Co. KG
+      - Ltd. & Co KG
+      - Ltd & Co KG
+      - Limited & Co. KG
 
   - display: Sp. z o.o.
     compare: Spzoo
